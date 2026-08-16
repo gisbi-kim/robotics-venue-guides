@@ -62,6 +62,7 @@
     h2{margin:7px 0 0;font-size:clamp(1.6rem,3vw,2.35rem);line-height:1.08;letter-spacing:-.035em}
     .section-note{max-width:410px;margin:0;color:var(--muted);font-size:.88rem;line-height:1.55;text-align:right}
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .grid > .card:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 8px);justify-self:center}
     .card{position:relative;display:grid;grid-template-columns:76px minmax(0,1fr);gap:18px;min-height:236px;padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--paper);box-shadow:0 8px 24px rgba(18,32,51,.045);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
     .card:hover{transform:translateY(-2px);border-color:#bdcad5;box-shadow:0 12px 28px rgba(18,32,51,.08)}
     .badge{display:grid;place-items:center;align-self:start;width:76px;height:76px;border-radius:15px;font-size:1.1rem;font-weight:900;letter-spacing:-.04em}
@@ -91,6 +92,7 @@
       .section-head{display:block}
       .section-note{margin-top:10px;text-align:left}
       .grid{grid-template-columns:1fr}
+      .grid > .card:last-child:nth-child(odd){grid-column:auto;width:auto;justify-self:stretch}
       .card{grid-template-columns:60px minmax(0,1fr);gap:14px;min-height:0;padding:19px}
       .badge{width:60px;height:60px;border-radius:13px;font-size:.92rem}
       .footer-inner{display:block}
@@ -116,9 +118,9 @@
         각 venue의 역사와 academic taste, 대표 연구를 한국어 4쪽 가이드로 살펴본다.
       </p>
       <div class="stats" aria-label="가이드 구성">
-        <span class="stat"><b>8</b> guides</span>
+        <span class="stat"><b>9</b> guides</span>
         <span class="stat"><b>4</b> conferences</span>
-        <span class="stat"><b>4</b> journals & magazine</span>
+        <span class="stat"><b>5</b> journals & magazine</span>
       </div>
     </div>
   </header>
@@ -250,6 +252,21 @@
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/ral-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/ral-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="badge">T-FR</div>
+          <div class="card-body">
+            <div class="meta">Field-Robotics Journal · IEEE RAS</div>
+            <h3>IEEE Transactions on Field Robotics</h3>
+            <p class="full-name">T-FR</p>
+            <p class="desc">T-FR을 단순히 <strong>“야외 로봇 논문을 받는 T-RO”</strong>라고 이해하면 가장 중요한 철학을 놓치게 된다. 이 저널의 차이는 application domain보다 <strong>validation regime</strong>에 있다. 논문의 가정이 실제 field의 불확실성·규모·환경 변화에 노출되어야 한다.</p>
+            <p class="desc">공식 scope는 built environment 밖의 unstructured·dynamic environments, 제어할 수 없는 ambient conditions, indoor보다 훨씬 큰 scale을 명시한다. 그리고 T-FR는 <strong>simulation이나 controlled laboratory experiment에만 의존한 experimental validation을 출판하지 않는다</strong>고 분명하게 적고 있다.</p>
+            <div class="links">
+              <a class="button primary" href="https://gisbi-kim.github.io/tfr-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
+              <a class="button secondary" href="https://github.com/gisbi-kim/tfr-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </article>
