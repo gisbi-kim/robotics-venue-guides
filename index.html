@@ -67,12 +67,14 @@
     .badge{display:grid;place-items:center;align-self:start;width:76px;height:76px;border-radius:15px;font-size:1.1rem;font-weight:900;letter-spacing:-.04em}
     .conference .badge{color:#07554e;background:#dff3ef}
     .publication .badge{color:#7f480e;background:#faecd9}
-    .card-body{min-width:0}
+    .card-body{display:flex;min-width:0;flex-direction:column}
     .meta{font-size:.7rem;font-weight:850;letter-spacing:.1em;text-transform:uppercase;color:#718093}
     h3{margin:8px 0 0;font-size:1.33rem;line-height:1.18;letter-spacing:-.025em}
-    .full-name{margin:6px 0 0;font-size:.78rem;line-height:1.45;color:#687688}
-    .desc{margin:14px 0 0;font-size:.91rem;line-height:1.65;color:#435266}
-    .links{display:flex;flex-wrap:wrap;gap:9px;margin-top:19px}
+    .full-name{margin:6px 0 0;font-size:.78rem;line-height:1.45;color:#687688;overflow-wrap:anywhere}
+    .desc{margin:14px 0 0;font-size:.91rem;line-height:1.7;color:#36485d;overflow-wrap:anywhere}
+    .desc + .desc{margin-top:10px;color:#536276}
+    .desc strong{color:#1b334d;font-weight:800}
+    .links{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto;padding-top:21px}
     .button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border-radius:9px;text-decoration:none;font-size:.8rem;font-weight:800}
     .button.primary{color:#fff;background:var(--navy)}
     .button.primary:hover{background:#12466f}
@@ -142,7 +144,8 @@
             <div class="meta">Spring Flagship · IEEE RAS</div>
             <h3>ICRA</h3>
             <p class="full-name">IEEE International Conference on Robotics and Automation</p>
-            <p class="desc">로보틱스 전 분야와 산업·community ecosystem이 한꺼번에 모이는 연간 전체 지도.</p>
+            <p class="desc">ICRA를 단순히 <strong>“acceptance가 어려운 큰 학회”</strong>로 이해하면 핵심을 놓치게 된다. ICRA의 가장 중요한 역할은 로보틱스의 서로 다른 subfield가 매년 한 장소에 모여 <strong>그 해의 기술적 front line과 community agenda를 가장 넓게 공유하는 것</strong>이다.</p>
+            <p class="desc">IEEE RAS는 ICRA를 공식적으로 <strong>flagship conference</strong>이자 leading robotics researchers가 연구를 발표하고 토론하는 <strong>premier international forum</strong>으로 규정한다. 1984년 시작해 매년 개최됐고, perception·control·planning·learning·mechanism·HRI·medical·field robotics까지 사실상 robotics 전체를 다룬다.</p>
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/icra-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/icra-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -156,7 +159,8 @@
             <div class="meta">Fall Flagship · IEEE / RSJ</div>
             <h3>IROS</h3>
             <p class="full-name">International Conference on Intelligent Robots and Systems</p>
-            <p class="desc">Intelligent robots와 systems의 계보를 가진 multi-society 국제 flagship conference.</p>
+            <p class="desc">IROS를 <strong>“ICRA 다음의 비슷한 학회”</strong>라고만 이해하면 고유한 정체성을 놓친다. IROS는 IEEE RAS 단독 계열이 아니라 <strong>IEEE와 일본 robotics community가 함께 만든 multi-society flagship</strong>이며, 가을마다 robotics 전 분야의 새로운 지능·시스템·embodiment를 한곳에 모아왔다.</p>
+            <p class="desc">IEEE RAS는 IROS를 “one of the largest and most impacting robotics research conferences worldwide”라고 설명하며, 별도로 <strong>the society’s fall flagship conference</strong>라고 부른다. 오늘날 ICRA와 scope는 크게 겹치지만, IROS라는 이름에는 처음부터 “intelligent robots + systems”라는 system-oriented intellectual lineage가 남아 있다.</p>
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/iros-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/iros-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -170,7 +174,8 @@
             <div class="meta">Single Track · Independent Foundation</div>
             <h3>RSS</h3>
             <p class="full-name">Robotics: Science and Systems</p>
-            <p class="desc">Science와 Systems를 한 트랙에서 연결하며 강한 중심 아이디어를 공유하는 연구 커뮤니티.</p>
+            <p class="desc">RSS를 단순히 <strong>“ICRA·IROS보다 규모가 작은 학회”</strong>라고 이해하면 핵심을 놓치게 된다. RSS의 가장 독특한 자산은 <strong>single-track</strong>이라는 형식 자체다. 서로 다른 subfield의 연구자들이 같은 발표를 보고, 같은 논문을 중심으로 토론하도록 설계된 broad robotics conference다.</p>
+            <p class="desc">RSS Foundation은 스스로가 지향하는 모델을 “open, high-quality, single-track conference”로 설명한다. 2026 CFP 역시 scientific foundations, mechanisms, algorithms, applications, analysis를 모두 포괄하면서 <strong>Science / Systems contribution</strong>을 명시적으로 함께 요청한다.</p>
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/rss-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/rss-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -184,7 +189,8 @@
             <div class="meta">Specialist Symposium · Field Robotics</div>
             <h3>SSRR</h3>
             <p class="full-name">Safety, Security, and Rescue Robotics</p>
-            <p class="desc">재난·구조·공공안전과 극한 환경에서 실제 로봇을 운용하는 문제에 집중하는 전문 심포지엄.</p>
+            <p class="desc">SSRR을 단순히 “ICRA·IROS보다 작은 학회”로 이해하면 이 venue의 중요한 맥락을 놓치게 된다. SSRR의 정체성은 <strong>규모보다 domain</strong>, <strong>알고리즘 자체보다 deployment context</strong>, 그리고 <strong>실제 사용자 요구에서 출발하는 field robotics</strong>에 있다.</p>
+            <p class="desc">Broad flagship conference가 로보틱스 전반의 새로운 방법론과 일반화 가능한 기술적 기여를 폭넓게 경쟁시키는 장이라면, SSRR은 public safety·emergency response·humanitarian assistance와 같은 명확한 맥락에서 “현장에서 실제로 무엇이 필요한가”를 깊이 다루는 전문 커뮤니티에 가깝다.</p>
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/ssrr-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/ssrr-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -209,7 +215,8 @@
             <div class="meta">Flagship Archival Journal · IEEE RAS</div>
             <h3>IEEE Transactions on Robotics</h3>
             <p class="full-name">T-RO</p>
-            <p class="desc">State of the art를 실질적으로 확장하는 major advance를 완결된 evidence와 함께 남기는 대표 저널.</p>
+            <p class="desc">T-RO를 단순히 <strong>“ICRA·IROS 논문을 길게 쓴 저널 버전”</strong>으로 이해하면 핵심을 놓치게 된다. T-RO가 요구하는 것은 분량이 아니라, <strong>state of the art를 실질적으로 확장하는 결과와 그 주장을 오래 남길 수 있을 만큼 완결된 evidence</strong>다.</p>
+            <p class="desc">공식 scope는 theory, design, experiments, analysis, algorithms, system integration, application case studies를 모두 포괄한다. 특정 방법론을 선호하기보다 “이 논문이 robotics라는 분야에 남길 substantive advance가 무엇인가”를 중심으로 평가되는 저널에 가깝다.</p>
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/tro-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/tro-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -223,7 +230,8 @@
             <div class="meta">Long-Standing Robotics Journal</div>
             <h3>IJRR</h3>
             <p class="full-name">The International Journal of Robotics Research</p>
-            <p class="desc">Robotics 자체의 중요한 결과를 다른 연구자가 다시 출발점으로 삼을 scholarly record로 만드는 저널.</p>
+            <p class="desc">IJRR를 단순히 <strong>“T-RO와 비슷한 또 하나의 최상위 저널”</strong>로만 이해하면 역사적 성격을 놓치게 된다. 1982년 로보틱스가 아직 여러 공학 분야의 응용으로 보이던 시기에, IJRR는 <strong>robotics 자체를 하나의 science &amp; technology로 기록하는 전용 scholarly venue</strong>로 출발했다.</p>
+            <p class="desc">현재 IJRR의 공식 기준도 이 전통과 연결돼 있다. scope는 “all of robotics”이며, 로보틱스를 Michael Brady의 표현을 빌려 perception과 action을 잇는 <strong>intelligent link</strong>로 본다. 논문은 original·solid해야 하고, 다른 연구자가 그 위에 다시 연구를 쌓을 수 있어야 하며, 시간이 지나도 가치가 남아야 한다.</p>
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/ijrr-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/ijrr-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -237,7 +245,8 @@
             <div class="meta">Rapid · Concise · Archival</div>
             <h3>IEEE Robotics and Automation Letters</h3>
             <p class="full-name">RA-L</p>
-            <p class="desc">완결된 robotics result를 concise한 letter로 빠르게 journal 출판하는 IEEE RAS의 독특한 publication model.</p>
+            <p class="desc">RA-L을 단순히 <strong>“T-RO보다 낮거나 짧은 저널”</strong>로 이해하면 설계 목적을 놓치게 된다. RA-L은 애초부터 <strong>timely + concise + fully peer-reviewed + archival</strong>이라는 네 조건을 동시에 만족시키기 위해 만들어졌다. 즉, conference 속도감과 journal publication의 성격을 결합한 별도의 연구 단위다.</p>
+            <p class="desc">IEEE RAS 공식 안내도 RA-L을 <strong>rapid, concise reports</strong>를 위한 저널로, T-RO/T-ASE를 <strong>more mature and in-depth treatments</strong>를 위한 저널로 구분한다. 어느 쪽이 “위”인가보다, 연구의 성숙도와 필요한 서술 단위가 어디에 맞는가의 차이에 가깝다.</p>
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/ral-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/ral-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -251,7 +260,8 @@
             <div class="meta">Peer-Reviewed Technical Magazine</div>
             <h3>IEEE Robotics & Automation Magazine</h3>
             <p class="full-name">RAM</p>
-            <p class="desc">Working system과 implementation을 기술적 깊이를 유지하면서 넓은 robotics community가 읽고 활용하게 만드는 매거진.</p>
+            <p class="desc">RAM을 단순히 <strong>“논문이 실리는 IEEE 잡지”</strong>라고 이해하면 가장 중요한 역할을 놓치게 된다. RAM은 스스로를 <strong>peer-reviewed, readable, substantive</strong>라고 규정한다. 즉, Transactions의 academic depth와 trade publication의 실용적 전달력 사이에 의도적으로 자리 잡은 독특한 publication이다.</p>
+            <p class="desc">공식 scope는 T-RO/T-ASE가 theory와 experiment를 통해 robotics science의 기반을 전진시킨다면, RAM은 그 결과를 <strong>working systems · creative solutions to real-world problems · implementation details</strong>에 초점을 맞춰 practicing engineer와 넓은 독자층에 전달한다고 설명한다.</p>
             <div class="links">
               <a class="button primary" href="https://gisbi-kim.github.io/ram-student-guide-kr/" target="_blank" rel="noopener noreferrer">가이드 열기 ↗</a>
               <a class="button secondary" href="https://github.com/gisbi-kim/ram-student-guide-kr" target="_blank" rel="noopener noreferrer">GitHub</a>
