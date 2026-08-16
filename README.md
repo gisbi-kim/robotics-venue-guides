@@ -8,7 +8,7 @@
 
 ## 구성
 
-- 학회: ICRA, IROS, RSS, SSRR, CoRL
+- 학회: ICRA, IROS, RSS, CoRL, SSRR
 - 저널·매거진: T-RO, IJRR, RA-L, T-FR, RAM
 
 ## 콘텐츠 경계
