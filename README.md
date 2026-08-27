@@ -4,7 +4,7 @@
 
 ## 공개 사이트
 
-<https://gisbi-kim.github.io/robotics-venue-guides-kr/>
+<https://gisbi-kim.github.io/robotics-venue-guides/>
 
 ## 구성
 
